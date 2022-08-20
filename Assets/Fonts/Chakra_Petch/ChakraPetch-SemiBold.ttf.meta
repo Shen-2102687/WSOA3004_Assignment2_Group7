@@ -1,0 +1,28 @@
+fileFormatVersion: 2
+guid: aa3558de23248e04bb892ceac7403111
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Chakra Petch
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 90b332f00752d794a9923d0c851c5328, type: 3}
+  - {fileID: 12800000, guid: 3738b5106c7d5844dadb5cd660f6ba23, type: 3}
+  - {fileID: 12800000, guid: 39b4159d3d4978540ab50f7791d8104e, type: 3}
+  - {fileID: 12800000, guid: 25145b92973c63941affd2862e86d48a, type: 3}
+  - {fileID: 12800000, guid: b9f3c5ed7a9b74643a5fa47b62a97ff9, type: 3}
+  - {fileID: 12800000, guid: a2ee156e128e8f740919a2504cb2120c, type: 3}
+  - {fileID: 12800000, guid: c33a8db5ffaeed143b046eb517b3af27, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -27,4 +27,14 @@ public class gameManager : MonoBehaviour
         Debug.Log("Clicked puzzblock:" + puzzleBlock.gameObject.name);
     }
 
+    public void onHoverEnter(GameObject puzzleBlock)
+    {
+        puzzleBlock.gameObject.GetComponent<Image>().color = Color.grey;
+    }
+
+    public void onHoverExit(GameObject puzzleBlock)
+    {
+        puzzleBlock.gameObject.GetComponent<Image>().color = Color.white;
+    }
+
 }

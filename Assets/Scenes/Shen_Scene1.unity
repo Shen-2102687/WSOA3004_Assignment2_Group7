@@ -390,6 +390,38 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1419921107}
+          m_TargetAssemblyTypeName: gameManager, Assembly-CSharp
+          m_MethodName: onHoverEnter
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 291611290}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1419921107}
+          m_TargetAssemblyTypeName: gameManager, Assembly-CSharp
+          m_MethodName: onHoverExit
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 291611290}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &295255920
 GameObject:
   m_ObjectHideFlags: 0
@@ -741,6 +773,38 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1419921107}
+          m_TargetAssemblyTypeName: gameManager, Assembly-CSharp
+          m_MethodName: onHoverEnter
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 648890117}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1419921107}
+          m_TargetAssemblyTypeName: gameManager, Assembly-CSharp
+          m_MethodName: onHoverExit
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 648890117}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &731107679
 GameObject:
   m_ObjectHideFlags: 0
@@ -839,6 +903,38 @@ MonoBehaviour:
         - m_Target: {fileID: 1419921107}
           m_TargetAssemblyTypeName: gameManager, Assembly-CSharp
           m_MethodName: clickFunction
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 731107679}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1419921107}
+          m_TargetAssemblyTypeName: gameManager, Assembly-CSharp
+          m_MethodName: onHoverEnter
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 731107679}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1419921107}
+          m_TargetAssemblyTypeName: gameManager, Assembly-CSharp
+          m_MethodName: onHoverExit
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 731107679}
@@ -1143,6 +1239,38 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1419921107}
+          m_TargetAssemblyTypeName: gameManager, Assembly-CSharp
+          m_MethodName: onHoverEnter
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1158258440}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1419921107}
+          m_TargetAssemblyTypeName: gameManager, Assembly-CSharp
+          m_MethodName: onHoverExit
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1158258440}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1270453917
 GameObject:
   m_ObjectHideFlags: 0
@@ -1241,6 +1369,38 @@ MonoBehaviour:
         - m_Target: {fileID: 1419921107}
           m_TargetAssemblyTypeName: gameManager, Assembly-CSharp
           m_MethodName: clickFunction
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1270453917}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1419921107}
+          m_TargetAssemblyTypeName: gameManager, Assembly-CSharp
+          m_MethodName: onHoverEnter
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1270453917}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1419921107}
+          m_TargetAssemblyTypeName: gameManager, Assembly-CSharp
+          m_MethodName: onHoverExit
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 1270453917}
@@ -1721,6 +1881,38 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1419921107}
+          m_TargetAssemblyTypeName: gameManager, Assembly-CSharp
+          m_MethodName: onHoverEnter
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1930504792}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1419921107}
+          m_TargetAssemblyTypeName: gameManager, Assembly-CSharp
+          m_MethodName: onHoverExit
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1930504792}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1966745416
 GameObject:
   m_ObjectHideFlags: 0
@@ -1899,6 +2091,38 @@ MonoBehaviour:
         - m_Target: {fileID: 1419921107}
           m_TargetAssemblyTypeName: gameManager, Assembly-CSharp
           m_MethodName: clickFunction
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1972247366}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1419921107}
+          m_TargetAssemblyTypeName: gameManager, Assembly-CSharp
+          m_MethodName: onHoverEnter
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1972247366}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1419921107}
+          m_TargetAssemblyTypeName: gameManager, Assembly-CSharp
+          m_MethodName: onHoverExit
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 1972247366}

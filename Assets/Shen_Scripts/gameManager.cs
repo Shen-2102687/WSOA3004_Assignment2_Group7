@@ -33,6 +33,16 @@ public class gameManager : MonoBehaviour
 
     public Text[] solvedTexts;
 
+    public Text sum1SolvedText;
+    public Text sum2SolvedText;
+    public Text sum3SolvedText;
+    public Text sum4SolvedText;
+
+    int sum1Solved;
+    int sum2Solved;
+    int sum3Solved;
+    int sum4Solved;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -42,19 +52,28 @@ public class gameManager : MonoBehaviour
             Debug.Log("Pos " + i + " Val: " + puzzleSolve[i]);
             solvedTexts[i].text = puzzleSolve[i].ToString();
         }
+
+        sum1Solved = puzzleSolve[0] + puzzleSolve[1] + puzzleSolve[2];
+        sum1SolvedText.text = sum1Solved.ToString();
+        sum2Solved = puzzleSolve[0] + puzzleSolve[4] + puzzleSolve[2];
+        sum2SolvedText.text = sum2Solved.ToString();
+        sum3Solved = puzzleSolve[3] + puzzleSolve[4] + puzzleSolve[5];
+        sum3SolvedText.text = sum3Solved.ToString();
+        sum4Solved = puzzleSolve[3] + puzzleSolve[6] + puzzleSolve[5];
+        sum4SolvedText.text = sum4Solved.ToString();
     }
 
     // Update is called once per frame
     void Update()
     {
         sum1 = puzzleBlockVals[0] + puzzleBlockVals[1] + puzzleBlockVals[2];
-        sum1Text.text = "Row 1 sum: " + sum1.ToString();
+        sum1Text.text = sum1.ToString();
         sum2 = puzzleBlockVals[0] + puzzleBlockVals[4] + puzzleBlockVals[2];
-        sum2Text.text = "Row 2 sum: " + sum2.ToString();
+        sum2Text.text = sum2.ToString();
         sum3 = puzzleBlockVals[3] + puzzleBlockVals[4] + puzzleBlockVals[5];
-        sum3Text.text = "Row 3 sum: " + sum3.ToString();
+        sum3Text.text = sum3.ToString();
         sum4 = puzzleBlockVals[3] + puzzleBlockVals[6] + puzzleBlockVals[5];
-        sum4Text.text = "Row 4 sum: " + sum4.ToString();
+        sum4Text.text = sum4.ToString();
     }
 
     public void clickFunction(GameObject puzzleBlock)

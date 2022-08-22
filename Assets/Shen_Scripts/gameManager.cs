@@ -10,6 +10,23 @@ public class gameManager : MonoBehaviour
     bool canSwap = false;
     bool canHover2 = false;
 
+    public Text[] puzzleBlockTexts;
+
+    int[] puzzleBlockVals = new int[] { 0, 1, 2, 3, 4, 5, 6 };
+    int temp1Pos;
+    int temp2Pos;
+    int temp1Val;
+    int temp2Val;
+
+    int sum1;
+    int sum2;
+    int sum3;
+    int sum4;
+
+    public Text sum1Text;
+    public Text sum2Text;
+    public Text sum3Text;
+    public Text sum4Text;
 
     // Start is called before the first frame update
     void Start()
@@ -20,20 +37,30 @@ public class gameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        sum1 = puzzleBlockVals[0] + puzzleBlockVals[1] + puzzleBlockVals[2];
+        sum1Text.text = "Row 1 sum: " + sum1.ToString();
+        sum2 = puzzleBlockVals[0] + puzzleBlockVals[4] + puzzleBlockVals[2];
+        sum2Text.text = "Row 2 sum: " + sum2.ToString();
+        sum3 = puzzleBlockVals[3] + puzzleBlockVals[4] + puzzleBlockVals[5];
+        sum3Text.text = "Row 3 sum: " + sum3.ToString();
+        sum4 = puzzleBlockVals[3] + puzzleBlockVals[6] + puzzleBlockVals[5];
+        sum4Text.text = "Row 4 sum: " + sum4.ToString();
     }
 
     public void clickFunction(GameObject puzzleBlock)
     {
         //Debug.Log("Clicked image");
-        Debug.Log("Clicked puzzblock:" + puzzleBlock.gameObject.name);
+        //Debug.Log("Clicked puzzblock:" + puzzleBlock.gameObject.name);
         
 
         int index = System.Array.IndexOf(puzzleBlocks, puzzleBlock);
-        Debug.Log(index);
+        Debug.Log("Clicked: " + puzzleBlock.gameObject.name + " With Index: " + index);
 
         if (canHover)
         {
+            temp1Pos = index;
+            temp1Val = puzzleBlockVals[index];
+            
             switch (index)
             {
                 case 0:
@@ -108,6 +135,9 @@ public class gameManager : MonoBehaviour
             }
         }else if (canSwap)
         {
+            temp2Pos = index;
+            temp2Val = puzzleBlockVals[index];
+
             if (puzzleBlocks[index].gameObject.GetComponent<Image>().color == /*Color.green*/ new Color(62f / 255f, 110f / 255f, 49f / 255f))
             {
                 Debug.Log("Swap Now");
@@ -115,6 +145,17 @@ public class gameManager : MonoBehaviour
                 canHover2 = false;
                 canHover = true;
                 changeToWhite();
+
+                //temp2 = puzzleBlockVals[index];
+                Debug.Log("1stTemp: " + temp1Pos + " 2ndTemp: " + temp2Pos);
+
+                //swapping the values
+                puzzleBlockVals[temp1Pos] = temp2Val;
+                puzzleBlockTexts[temp1Pos].text = temp2Val.ToString();
+                puzzleBlockVals[temp2Pos] = temp1Val;
+                puzzleBlockTexts[temp2Pos].text = temp1Val.ToString();
+                
+
             }
             else
             {

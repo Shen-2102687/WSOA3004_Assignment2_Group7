@@ -28,10 +28,20 @@ public class gameManager : MonoBehaviour
     public Text sum3Text;
     public Text sum4Text;
 
+    int[] puzzleSolve = new int[] { 0, 1, 2, 3, 4, 5, 6 };
+    int tempSolve;
+
+    public Text[] solvedTexts;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        shuffleArray();
+        for (int i = 0; i < puzzleSolve.Length; i++)
+        {
+            Debug.Log("Pos " + i + " Val: " + puzzleSolve[i]);
+            solvedTexts[i].text = puzzleSolve[i].ToString();
+        }
     }
 
     // Update is called once per frame
@@ -217,6 +227,17 @@ public class gameManager : MonoBehaviour
         foreach (GameObject puzzleBlock in puzzleBlocks)
         {
             puzzleBlock.gameObject.GetComponent<Image>().color = Color.white;
+        }
+    }
+
+    public void shuffleArray()
+    {
+        for (int i = 0; i < puzzleSolve.Length; i++)
+        {
+            int rand = Random.Range(0, puzzleSolve.Length);
+            tempSolve = puzzleSolve[rand];
+            puzzleSolve[rand] = puzzleSolve[i];
+            puzzleSolve[i] = tempSolve;
         }
     }
 

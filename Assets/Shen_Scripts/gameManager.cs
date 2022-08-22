@@ -22,11 +22,13 @@ public class gameManager : MonoBehaviour
     int sum2;
     int sum3;
     int sum4;
+    int sum5;
 
     public Text sum1Text;
     public Text sum2Text;
     public Text sum3Text;
     public Text sum4Text;
+    public Text sum5Text;
 
     int[] puzzleSolve = new int[] { 0, 1, 2, 3, 4, 5, 6 };
     int tempSolve;
@@ -37,11 +39,19 @@ public class gameManager : MonoBehaviour
     public Text sum2SolvedText;
     public Text sum3SolvedText;
     public Text sum4SolvedText;
+    public Text sum5SolvedText;
 
     int sum1Solved;
     int sum2Solved;
     int sum3Solved;
     int sum4Solved;
+    int sum5Solved;
+
+    public Text showSolvedText;
+
+    int numHints = 3;
+
+    public Text hintText;
 
     // Start is called before the first frame update
     void Start()
@@ -61,6 +71,14 @@ public class gameManager : MonoBehaviour
         sum3SolvedText.text = sum3Solved.ToString();
         sum4Solved = puzzleSolve[3] + puzzleSolve[6] + puzzleSolve[5];
         sum4SolvedText.text = sum4Solved.ToString();
+        sum5Solved = puzzleSolve[1] + puzzleSolve[4] + puzzleSolve[6];
+        sum5SolvedText.text = sum5Solved.ToString();
+
+        foreach (Text solvedText in solvedTexts)
+        {
+            solvedText.gameObject.SetActive(false);
+        }
+
     }
 
     // Update is called once per frame
@@ -74,6 +92,54 @@ public class gameManager : MonoBehaviour
         sum3Text.text = sum3.ToString();
         sum4 = puzzleBlockVals[3] + puzzleBlockVals[6] + puzzleBlockVals[5];
         sum4Text.text = sum4.ToString();
+        sum5 = puzzleBlockVals[1] + puzzleBlockVals[4] + puzzleBlockVals[6];
+        sum5Text.text = sum5.ToString();
+
+        if(sum1 == sum1Solved)
+        {
+            sum1Text.color = new Color(90f/255f, 224f/255f, 56f/255f);
+        }
+        else
+        {
+            sum1Text.color = Color.red;
+        }
+
+        if (sum2 == sum2Solved)
+        {
+            sum2Text.color = new Color(90f / 255f, 224f / 255f, 56f / 255f);
+        }
+        else
+        {
+            sum2Text.color = Color.red;
+        }
+
+        if (sum3 == sum3Solved)
+        {
+            sum3Text.color = new Color(90f / 255f, 224f / 255f, 56f / 255f);
+        }
+        else
+        {
+            sum3Text.color = Color.red;
+        }
+
+        if (sum4 == sum4Solved)
+        {
+            sum4Text.color = new Color(90f / 255f, 224f / 255f, 56f / 255f);
+        }
+        else
+        {
+            sum4Text.color = Color.red;
+        }
+
+        if (sum5 == sum5Solved)
+        {
+            sum5Text.color = new Color(90f / 255f, 224f / 255f, 56f / 255f);
+        }
+        else
+        {
+            sum5Text.color = Color.red;
+        }
+
     }
 
     public void clickFunction(GameObject puzzleBlock)
@@ -258,6 +324,44 @@ public class gameManager : MonoBehaviour
             puzzleSolve[rand] = puzzleSolve[i];
             puzzleSolve[i] = tempSolve;
         }
+    }
+
+    public void showSolvedPuzzle()
+    {
+        foreach (Text solvedText in solvedTexts)
+        {
+            if (!solvedText.gameObject.activeSelf)
+            {
+                solvedText.gameObject.SetActive(true);
+                showSolvedText.text = "HIDE";
+            }
+            else
+            {
+                solvedText.gameObject.SetActive(false);
+                showSolvedText.text = "SHOW";
+            }
+            
+        }
+    }
+
+    public void showHint()
+    {
+        if (numHints == 3)
+        {
+            solvedTexts[0].gameObject.SetActive(true);
+        }
+        if (numHints == 2)
+        {
+            solvedTexts[5].gameObject.SetActive(true);
+        }
+        if (numHints == 1)
+        {
+            solvedTexts[4].gameObject.SetActive(true);
+        }
+        numHints--;
+        numHints = Mathf.Clamp(numHints, 0, 3);
+        hintText.text = "HINTS: " + numHints.ToString();
+        Debug.Log("Hints left: " + numHints);
     }
 
 }

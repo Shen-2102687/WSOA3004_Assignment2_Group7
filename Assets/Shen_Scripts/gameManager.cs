@@ -55,9 +55,15 @@ public class gameManager : MonoBehaviour
 
     public Text scoreText;
 
+    //public Sprite cursorSprite;
+
+    //Vector2 centre = new Vector2(0, 0);
+
     // Start is called before the first frame update
     void Start()
     {
+        //Cursor.SetCursor(cursorSprite.texture, centre, CursorMode.Auto);
+
         shuffleArray();
         for (int i = 0; i < puzzleSolve.Length; i++)
         {

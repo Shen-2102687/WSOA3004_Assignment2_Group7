@@ -3507,6 +3507,7 @@ MonoBehaviour:
   showSolvedText: {fileID: 1550069928}
   hintText: {fileID: 623052688}
   scoreText: {fileID: 34186022}
+  cursorSprite: {fileID: 0}
 --- !u!1 &1442401297
 GameObject:
   m_ObjectHideFlags: 0

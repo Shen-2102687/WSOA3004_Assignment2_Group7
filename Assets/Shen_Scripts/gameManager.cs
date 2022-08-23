@@ -159,16 +159,19 @@ public class gameManager : MonoBehaviour
         if (numHints == 2)
         {
             scoreText.text = "SCORE: 75%";
+            scoreText.color = new Color(161f/255f, 241f/255f, 42f/255f);
         }
 
         if (numHints == 1)
         {
             scoreText.text = "SCORE: 60%";
+            scoreText.color = new Color(241f/255f, 238f/255f, 42f/255f);
         }
 
         if (numHints < 1)
         {
             scoreText.text = "SCORE: 50%";
+            scoreText.color = new Color(241f/255f, 181f/255f, 42f/255f);
         }
 
         if (sum1 == sum1Solved && sum2 == sum2Solved && sum3 == sum3Solved && sum4 == sum4Solved && sum5 == sum5Solved)

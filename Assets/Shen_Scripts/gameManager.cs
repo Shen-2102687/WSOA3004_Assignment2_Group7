@@ -59,6 +59,8 @@ public class gameManager : MonoBehaviour
 
     Vector2 centre = new Vector2(0, 0);
 
+    public Animator catAnimator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -109,7 +111,7 @@ public class gameManager : MonoBehaviour
         }
         else
         {
-            sum1Text.color = Color.red;
+            sum1Text.color = new Color(255f/255f, 134f/255f, 141f/255f);
         }
 
         if (sum2 == sum2Solved)
@@ -118,7 +120,7 @@ public class gameManager : MonoBehaviour
         }
         else
         {
-            sum2Text.color = Color.red;
+            sum2Text.color = new Color(255f / 255f, 134f / 255f, 141f / 255f);
         }
 
         if (sum3 == sum3Solved)
@@ -127,7 +129,7 @@ public class gameManager : MonoBehaviour
         }
         else
         {
-            sum3Text.color = Color.red;
+            sum3Text.color = new Color(255f / 255f, 134f / 255f, 141f / 255f);
         }
 
         if (sum4 == sum4Solved)
@@ -136,7 +138,7 @@ public class gameManager : MonoBehaviour
         }
         else
         {
-            sum4Text.color = Color.red;
+            sum4Text.color = new Color(255f / 255f, 134f / 255f, 141f / 255f);
         }
 
         if (sum5 == sum5Solved)
@@ -145,7 +147,7 @@ public class gameManager : MonoBehaviour
         }
         else
         {
-            sum5Text.color = Color.red;
+            sum5Text.color = new Color(255f / 255f, 134f / 255f, 141f / 255f);
         }
 
 
@@ -167,6 +169,15 @@ public class gameManager : MonoBehaviour
         if (numHints < 1)
         {
             scoreText.text = "SCORE: 50%";
+        }
+
+        if (sum1 == sum1Solved && sum2 == sum2Solved && sum3 == sum3Solved && sum4 == sum4Solved && sum5 == sum5Solved)
+        {
+            catAnimator.SetBool("isHappy", true);
+        }
+        else
+        {
+            catAnimator.SetBool("isHappy", false);
         }
 
     }

@@ -53,6 +53,8 @@ public class gameManager : MonoBehaviour
 
     public Text hintText;
 
+    public Text scoreText;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -138,6 +140,27 @@ public class gameManager : MonoBehaviour
         else
         {
             sum5Text.color = Color.red;
+        }
+
+
+        if (numHints == 3)
+        {
+            scoreText.text = "SCORE: 100%";
+        }
+
+        if (numHints == 2)
+        {
+            scoreText.text = "SCORE: 75%";
+        }
+
+        if (numHints == 1)
+        {
+            scoreText.text = "SCORE: 60%";
+        }
+
+        if (numHints < 1)
+        {
+            scoreText.text = "SCORE: 50%";
         }
 
     }
